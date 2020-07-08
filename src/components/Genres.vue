@@ -88,6 +88,9 @@
             padding: .5rem 1rem;
             margin: .25rem;
             text-decoration: none;
+            @media only screen and (min-width: 900px) {
+                text-align: left;
+            }
             &--active{
                 color: $light-gray;
                 background-color: $green;

@@ -26,7 +26,15 @@
         position: relative;
         width: 100%;
         h1 {
-            padding-left: 35px;
+            flex: 0 0 calc(100% - 130px);
+            max-width: calc(100% - 130px);
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            @media only screen and (min-width: 900px) {
+                flex: 0 0 calc(100% - 50px);
+                max-width: calc(100% - 50px);
+            }
         }
         &_listing {
             display: flex;
