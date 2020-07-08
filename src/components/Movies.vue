@@ -25,7 +25,9 @@
     .movies {
         position: relative;
         width: 100%;
-
+        h1 {
+            padding-left: 35px;
+        }
         &_listing {
             display: flex;
             flex-wrap: wrap;

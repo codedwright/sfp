@@ -50,6 +50,8 @@ html, body {
 h1 {
   font-size: 3.5rem;
   margin: 2.9rem 0;
+  font-weight: 400;
+  text-align: left;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
