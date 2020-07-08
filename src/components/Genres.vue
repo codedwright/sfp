@@ -67,7 +67,10 @@
         background-color: white;
         overflow-x: hidden;
         @media only screen and (min-width: 900px) {
-            position: relative;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            height: auto;
             width: 100%;
         }
         a {

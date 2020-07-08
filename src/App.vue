@@ -63,7 +63,6 @@ h1 {
   box-sizing: border-box;
 }
 .navbar {
-  position: sticky;
   min-height: 4rem;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
   z-index: 2;
@@ -75,8 +74,10 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   @media only screen and (min-width: 900px) {
-    position: relative;
     box-shadow: none;
+    justify-content: normal;
+    align-items: normal;
+    display: block;
   }
   &_menu {
     @media only screen and (min-width: 900px) {
