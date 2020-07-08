@@ -66,6 +66,7 @@
         left: 0;
         background-color: white;
         overflow-x: hidden;
+        z-index: 1;
         @media only screen and (min-width: 900px) {
             position: -webkit-sticky;
             position: sticky;
