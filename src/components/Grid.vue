@@ -1,6 +1,6 @@
 <template>
   <div class="grid">
-    <Movies class="movies" :movies="moviesArray.results" :title="title"></Movies>
+    <Movies v-if="moviesArray" class="movies" :movies="moviesArray.results" :title="title"></Movies>
     <nav v-if="moviesArray" class="pagination">
       <a @click="page = 1" class="pagination_link">First</a>
       <a v-if="previousPage" @click="page = previousPage" href="" class="pagination_link">{{ previousPage }}</a>
