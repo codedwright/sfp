@@ -69,7 +69,6 @@ h1 {
   z-index: 2;
   top: 0;
   left: 0;
-  overflow-x: hidden;
   background-color: white;
   width: 100%;
   display: flex;
