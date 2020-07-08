@@ -57,7 +57,7 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 900px) {
     display: flex;
   }
   box-sizing: border-box;
@@ -74,12 +74,12 @@ h1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 900px) {
     position: relative;
     box-shadow: none;
   }
   &_menu {
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 900px) {
       display: none
     }
   }

@@ -42,7 +42,7 @@
             border: 1px solid rgba(0,0,0,.125);
             border-radius: .25rem;
             margin: 0 15px 15px;
-            @media only screen and (min-width: 600px) {
+            @media only screen and (min-width: 900px) {
                 flex: 0 0 calc(25% - 40px); // added extra space
                 max-width: calc(25% - 40px);
             }

@@ -66,7 +66,7 @@
         left: 0;
         background-color: white;
         overflow-x: hidden;
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: 900px) {
             position: relative;
             width: 100%;
         }
