@@ -58,7 +58,7 @@
         right: 20px;
     }
     .genres {
-        transition: 2s;
+        transition: 1s;
         width: 0;
         height: 100%;
         position: fixed;
@@ -67,19 +67,22 @@
         background-color: white;
         overflow-x: hidden;
         z-index: 1;
+        * {
+            transition: 1.5s ease-out;
+            opacity: 0;
+        }
         @media only screen and (min-width: 900px) {
             position: -webkit-sticky;
             position: sticky;
             top: 0;
             height: auto;
             width: 100%;
+            * {
+                opacity: 1;
+            }
         }
         a {
             font-size: 2.5rem;
-        }
-        * {
-            transition: 3s ease-out;
-            opacity: 0;
         }
         &--open {
             width: 100%;
