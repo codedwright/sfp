@@ -101,9 +101,11 @@ h1 {
     background-color: transparent;
     border: 1px solid $blue-grey;
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 2rem;
     border-radius: .25rem;
     text-transform: none;
+    width: 37px;
+    height: 37px;
 }
 button,
 a {

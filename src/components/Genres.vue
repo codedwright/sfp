@@ -54,7 +54,7 @@
 <style lang="scss" scoped>
     .navbar_menu {
         position: absolute;
-        top: 20px;
+        top: 15px;
         right: 20px;
     }
     .genres {
@@ -77,8 +77,15 @@
         a {
             font-size: 2.5rem;
         }
+        * {
+            transition: 3s ease-out;
+            opacity: 0;
+        }
         &--open {
             width: 100%;
+            * {
+                opacity: 1;
+            }
         }
         &_list-item {
             color: $blue-grey;
