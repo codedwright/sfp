@@ -26,11 +26,15 @@
         position: relative;
         width: 100%;
         h1 {
-            flex: 0 0 calc(100% - 130px);
-            max-width: calc(100% - 130px);
+            flex: 0 0 calc(100% - 34px);
+            max-width: calc(100% - 34px);
             margin-left: auto;
             margin-right: auto;
             text-align: left;
+            @media only screen and (min-width: 600px) {
+                flex: 0 0 calc(100% - 130px);
+                max-width: calc(100% - 130px);
+            }
             @media only screen and (min-width: 900px) {
                 flex: 0 0 calc(100% - 50px);
                 max-width: calc(100% - 50px);
@@ -45,13 +49,17 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            flex: 0 0 calc(50% - 80px); // added extra space
-            max-width: calc(50% - 80px);
+            flex: 0 0 calc(50% - 32px); // added extra space
+            max-width: calc(50% - 32px);
             word-wrap: break-word;
             background-clip: border-box;
             border: 1px solid rgba(0,0,0,.125);
             border-radius: .25rem;
             margin: 0 15px 15px;
+            @media only screen and (min-width: 600px) {
+                flex: 0 0 calc(50% - 80px); // added extra space
+                max-width: calc(50% - 80px);
+            }
             @media only screen and (min-width: 900px) {
                 flex: 0 0 calc(25% - 40px); // added extra space
                 max-width: calc(25% - 40px);
