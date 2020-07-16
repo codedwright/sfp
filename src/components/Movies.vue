@@ -3,7 +3,7 @@
         <h1>{{ title }} Movies </h1>
         <div class="movies_listing">
             <div :key="movie.id" v-for="movie in movies" class="card">
-                <img class="card_img" :src="'http://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="">
+                <img class="card_img" :src="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="">
                 <h2 class="card_title">{{ movie.original_title }}</h2>
                 <small class="card_average-rating">Average Rating: {{ movie.vote_average }}</small>
             </div>
