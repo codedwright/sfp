@@ -1,10 +1,10 @@
 <template>
     <div class="genres" :class="{'genres--open': open}">
-        <button class="navbar_menu" @click="closeDrawer">x</button>
+        <button class="close" @click="closeDrawer">x</button>
         <h1>Genres</h1>
         <a
             :key="genre.id"
-            class="genres_list-item"
+            class="genres__list-item"
             :class="{'genres_list-item--active': selectedGenre === genre.id}"
             @click="changeGenre(genre)"
             v-for="genre in genresArray">
@@ -52,10 +52,13 @@
 </script>
 
 <style lang="scss" scoped>
-    .navbar_menu {
+    .close {
         position: absolute;
         top: 15px;
         right: 20px;
+        @media only screen and (min-width: 900px) {
+            display: none
+        }
     }
     .genres {
         transition: 1s;
@@ -90,7 +93,7 @@
                 opacity: 1;
             }
         }
-        &_list-item {
+        &__list-item {
             color: $blue-grey;
             background-color: $light-gray;
             border-radius: .25rem;

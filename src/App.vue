@@ -1,7 +1,7 @@
 <template>
   <div id="app" >
     <nav class="navbar">
-      <button class="navbar_menu" @click="open = !open">&#9776;</button>
+      <button class="navbar__menu" @click="open = !open">&#9776;</button>
       <Genres class="genres" :open="open" @changeGenre="changeGenre" @closeDrawer="closeDrawer"></Genres>
     </nav>
     <Grid class="grid" :genre="genre" :title="title"></Grid>
@@ -83,7 +83,7 @@ h1 {
     align-items: normal;
     display: block;
   }
-  &_menu {
+  &__menu {
     @media only screen and (min-width: 900px) {
       display: none
     }

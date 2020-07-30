@@ -2,11 +2,11 @@
   <div class="grid">
     <Movies v-if="moviesArray" class="movies" :movies="moviesArray.results" :title="title"></Movies>
     <nav v-if="moviesArray" class="pagination">
-      <a @click="page = 1" class="pagination_link">First</a>
+      <a @click="page = 1" class="pagination__link">First</a>
       <a v-if="previousPage" @click="page = previousPage" href="" class="pagination_link">{{ previousPage }}</a>
-      <a class="pagination_link pagination_link--current">{{ moviesArray.page }}</a>
-      <a v-if="nextPage" @click="page = nextPage" class="pagination_link">{{ nextPage }}</a>
-      <a @click="page = moviesArray.total_pages" class="pagination_link">Last</a>
+      <a class="pagination__link pagination__link--current">{{ moviesArray.page }}</a>
+      <a v-if="nextPage" @click="page = nextPage" class="pagination__link">{{ nextPage }}</a>
+      <a @click="page = moviesArray.total_pages" class="pagination__link">Last</a>
     </nav>
   </div>
 </template>
@@ -72,7 +72,7 @@ export default {
     margin: 1.5rem 2rem;
     display: flex;
     justify-content: flex-end;
-    .pagination_link {
+    &__link {
       border: 0;
       border-radius: .5rem;
       padding: .3rem 1.1rem;

@@ -1,11 +1,11 @@
 <template>
     <div class="movies">
         <h1>{{ title }} Movies </h1>
-        <div class="movies_listing">
+        <div class="movies__listing">
             <div :key="movie.id" v-for="movie in movies" class="card">
-                <img class="card_img" :src="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="">
-                <h2 class="card_title">{{ movie.original_title }}</h2>
-                <small class="card_average-rating">Average Rating: {{ movie.vote_average }}</small>
+                <img class="card__img" :src="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="">
+                <h2 class="card__title">{{ movie.original_title }}</h2>
+                <small class="card__average-rating">Average Rating: {{ movie.vote_average }}</small>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
                 max-width: calc(100% - 50px);
             }
         }
-        &_listing {
+        &__listing {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -64,17 +64,17 @@
                 flex: 0 0 calc(25% - 40px); // added extra space
                 max-width: calc(25% - 40px);
             }
-            &_img {
+            &__img {
                 border-top-left-radius: calc(.25rem - 1px);
                 border-top-right-radius: calc(.25rem - 1px);
                 flex-shrink: 0;
                 width: 100%;
             }
-            &_title {
+            &__title {
                 font-size: 2.4rem;
                 margin-bottom: 0;
             }
-            &_average-rating {
+            &__average-rating {
                 font-size: 1.6rem;
                 margin: .8rem;
             }
